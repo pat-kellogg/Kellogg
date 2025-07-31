@@ -254,13 +254,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const animatedEls = document.querySelectorAll('.card-content, blockquote');
   const quoteCard = document.getElementById('quote-card');
 
-  /*const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) entry.target.classList.add('visible');
     });
   }, observerOptions);
 
-  animatedEls.forEach(el => observer.observe(el));*/
+  animatedEls.forEach(el => observer.observe(el));
 
   // Reset animations at top, but keep quote card visible
   window.addEventListener('scroll', () => {
